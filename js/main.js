@@ -60,7 +60,7 @@ function updateData(_gend){
         $.each(data,function(key,items){
             //Store Gender
             _gend = items.gender;
-            newResult +=   '<div class="col-3 card">' +
+            newResult +=   '<div class="col-3 card wow fadeIn">' +
                             '<p><b>' + items.name + '</b></p>' +
                             '<p>' + _gend + '</p>' +
                         '</div>';
