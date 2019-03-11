@@ -4,7 +4,7 @@ var urlsToCache = [
   '/css/main.css',
   '/js/main.js',
   '/images/logo-monster.png',
-  '/js/jquery.js'
+  '/js/jquery.min.js'
 ];
 
 self.addEventListener('install', function(event) {
@@ -12,7 +12,7 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(function(cache) {
-        console.log('Opened cache');
+        console.log('Opened cache',cache);
         return cache.addAll(urlsToCache);
       })
   );
