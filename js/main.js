@@ -125,7 +125,7 @@ $(document).ready(function(){
                         primaryKey : 1
                     },
                     actions : [
-                        {action : 'explore', title : 'Hai !'},
+                        {action : 'google.com', title : 'Hai !'},
                         {action : 'close', title : 'Close'}
                     ]
                 };
