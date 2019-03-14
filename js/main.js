@@ -22,7 +22,7 @@ $(document).ready(function(){
 
             // untuk memasukkan data ke result dari API
             result += 
-                '<div class="col-3 card">' +
+                '<div class="col-3 col-sm-12 card">' +
                     '<p><b>' + items.name + '</b></p>' +
                     '<p>' + _gend + '</p>' +
                 '</div>';
@@ -95,7 +95,7 @@ $(document).ready(function(){
 
                 // untuk memasukkan data ke result dari API
                 result += 
-                        '<div class="col-3 card">' +
+                        '<div class="col-3 col-sm-12 card">' +
                             '<p><b>' + items.name + '</b></p>' +
                             '<p>' + _gend + '</p>' +
                         '</div>';
