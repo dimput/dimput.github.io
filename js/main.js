@@ -22,9 +22,11 @@ $(document).ready(function(){
 
             // untuk memasukkan data ke result dari API
             result += 
-                '<div class="col-sm-4 card">' +
-                    '<p><b>' + items.name + '</b></p>' +
-                    '<p>' + _gend + '</p>' +
+                '<div class="col-sm-4 padding-sedikit wow fadeIn">' +
+                    '<div class="card padding-sedikit">' +
+                        '<p><b>' + items.name + '</b></p>' +
+                        '<p>' + _gend + '</p>' +
+                    '</div>'+
                 '</div>';
 
             // jika gender tidak ada didalam array gender,
@@ -95,10 +97,12 @@ $(document).ready(function(){
 
                 // untuk memasukkan data ke result dari API
                 result += 
-                        '<div class="col-sm-4 card">' +
-                            '<p><b>' + items.name + '</b></p>' +
-                            '<p>' + _gend + '</p>' +
-                        '</div>';
+                            '<div class="col-sm-4 padding-sedikit wow fadeIn">' +
+                                '<div class="card padding-sedikit">' +
+                                    '<p><b>' + items.name + '</b></p>' +
+                                    '<p>' + _gend + '</p>' +
+                                '</div>'+
+                            '</div>';
             });
 
             // update list
