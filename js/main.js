@@ -128,8 +128,8 @@ $(document).ready(function(){
                         {action : 'explore', title : 'Hai !'},
                         {action : 'close', title : 'Close'}
                     ]
-                }
-                reg.showNotification('Judul Notifikasi',opt);
+                };
+                reg.showNotification('Monster University',opt);
             })
         }
     }
