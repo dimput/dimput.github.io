@@ -118,7 +118,7 @@ $(document).ready(function(){
             .then(function(reg){
                 var opt = {
                     body : 'Welcome to Monster University :)',
-                    icon : 'images/logo-monster-1.png',
+                    icon : 'images/logo-monster.png',
                     vibrate : [100,50,100],
                     data : {
                         dateOfArrival : Date.now(),
