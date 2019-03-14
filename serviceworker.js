@@ -29,7 +29,7 @@ self.addEventListener('activate', function (event) {
       caches.keys().then(function (cacheNames) {
           return Promise.all(
               // delete cache jika ada versi  lebih baru
-              cacheName.filter(function (cacheName) {
+              cacheNames.filter(function (cacheName) {
                   return cacheName !== CACHE_NAME;
               }).map(function (cacheName) {
                   return caches.delete(cacheName);

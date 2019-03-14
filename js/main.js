@@ -105,7 +105,42 @@ $(document).ready(function(){
             $('#mhs-list').html(result);
         });
     }
+
+    Notification.requestPermission(function(status){
+        console.log('Notification permissiln status ..',status);
+    });
+
+    function displayNotification(){
+        if(Notification.permission === 'granted'){
+        console.log("wwwwwww");
+
+            navigator.serviceWorker.getRegistration()
+            .then(function(reg){
+                var opt = {
+                    body : 'Welcome to Monster University :)',
+                    icon : 'images/logo-monster.png',
+                    vibrate : [100,50,100],
+                    data : {
+                        dateOfArrival : Date.now(),
+                        primaryKey : 1
+                    },
+                    actions : [
+                        {action : 'explore', title : 'Hai !'},
+                        {action : 'close', title : 'Close'}
+                    ]
+                }
+                reg.showNotification('Judul Notifikasi',opt);
+            })
+        }
+    }
+    
+    $('#notification').on('click', function(){
+        console.log('www');
+        displayNotification();
+    })
 });
+
+
 
 //Service Worker
 if ('serviceWorker' in navigator) {
