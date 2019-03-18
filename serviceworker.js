@@ -81,4 +81,26 @@ self.addEventListener('fetch', function (event) {
   //         return fetch(event.request);
   //     })
   // )
-})
+});
+
+self.addEventListener('notificationClose', function (n){
+    var notification = n.notification;
+    var primaryKey = notification.data.primaryKey;
+
+    console.log('Close Notification : ' + primaryKey);
+});
+
+
+self.addEventListener('notificationclick', function (n){
+    var notification = n.notification;
+    var primaryKey = notification.data.primaryKey;
+    var action = n.action;
+
+    if(action === 'close'){
+        notification.close();
+    }else{
+        clients.openWindow('https://www.github.com/dimput/');
+        notification.close();
+    }
+
+});
