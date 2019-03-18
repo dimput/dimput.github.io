@@ -3,7 +3,7 @@
   "short_name": "MU",
   "theme_color": "#2196f3",
   "background_color": "#74c1ff",
-  "display": "browser",
+  "display": "fullscreen",
   "orientation": "portrait",
   "Scope": "/",
   "start_url": "/",

@@ -2,7 +2,7 @@ $(document).ready(function(){
     //API
     var _url = "https://my-json-server.typicode.com/dimput/latihan-pwa-public/mahasiswa";
 
-    //var _url = "http://localhost:8787/json.php";
+    // var _url = "http://localhost:8787/json.php";
     //Store Data
 
     // menampung data yang didapat dari API
