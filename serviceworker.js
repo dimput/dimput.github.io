@@ -7,6 +7,8 @@ var urlsToCache = [
   '/js/jquery.min.js',
   '/wow.css',
   '/wow.js',
+  '/serviceworker.js',
+  'manifest.json',
   '/css/bootstrap.css'
 ];
 self.addEventListener('install', function (event) {
